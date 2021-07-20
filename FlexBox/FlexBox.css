@@ -1,0 +1,148 @@
+/*Normalize*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+
+/*https://caniuse.com/?search=display%3Aflex*/
+
+/*Flex box is out in 2017; been a godsend ever since*/
+/*Parent properties Flex container (use proper names)*/
+
+.parent {
+    display: flex;
+}
+
+.child {
+    width: 25%;
+    height: 300px;
+}
+
+.pink {
+    background-color: hotpink;
+}
+
+.green {
+    background-color: forestgreen;
+}
+
+.blue {
+    background-color: lightskyblue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+
+.parent {
+    flex-direction: row;
+}
+
+.parent {
+    flex-direction: row-reverse;
+}
+
+.parent {
+    flex-direction: column;
+}
+
+.parent {
+    flex-direction: column-reverse;
+}
+
+/*Let's talk about text-align: right*/
+
+/*Changing width of the children*/
+.child {
+    width: 20%;
+    width: 30%;
+    width: 1000px;
+}
+
+.blue,
+.pink {
+    width: 300px;
+}
+
+.green,
+.yellow {
+    width: 600px;
+}
+
+/*First main take-away: width is relative in FlexBox!!!*/
+/*https://memegenerator.net/instance/74006338/albert-einstein-beach-take-me-a-picture-like-everything-its-relative-to-me*/
+
+/*Let's wrap it up for now:*/
+
+.parent {
+    flex-wrap: wrap;
+}
+
+.parent {
+    flex-wrap: wrap-reverse;
+}
+
+.parent {
+    flex-wrap: nowrap; /*default*/
+}
+
+.parent {
+    flex-flow: row nowrap; /*default*/
+}
+/*Good news - don't have to remember anything for flex - look in the browser inspect to tell me what's next*/
+
+
+/*Align items*/
+
+.parent {
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column; /*row is the default*/
+    background-color: lightgray;
+    height: 250px;
+}
+
+.parent {
+    align-items: center;
+}
+
+/*Justify content*/
+
+.parent {
+    justify-content: center;
+}
+
+/*Align content - works only for multiline wrapped children*/
+
+/*Adding wrap to parent + more wrapped children*/
+.parent {
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.child {
+    height: 50px;
+}
+
+/*Questions*/
+
+/*Challenges*/
+
+/*Children properties - flex items*/
+/*Order*/
+/*Default is source, otherwise by order; you can group flex items*/
+/*Flex-grow*/
+/*Flex-shrink*/
+/*Flex-basis*/
+/*Flex shorthand*/
+/*Align self*/
+
+Additional resources
+
+https://geddski.teachable.com/p/flexbox-zombies
+https://flexboxfroggy.com/
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://codepen.io/justd/pen/yydezN/

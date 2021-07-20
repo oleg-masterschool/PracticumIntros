@@ -1,0 +1,113 @@
+/*Normalize*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+
+/*Parent properties*/
+.parent {
+    background-color: lightgray;
+    padding: 50px;
+    margin: 20px;
+    height: 200vh; /*to have a scroll*/
+}
+
+/* Child properties */
+.child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100px;
+}
+
+.blue {
+    background-color: lightskyblue;
+}
+
+.orange {
+    background-color: darkorange;
+}
+
+/*We start with position: static*/
+/*Nothing interesting happens here - it's the default*/
+
+.orange {
+    position: static;
+}
+
+/*Position relative*/
+
+.orange {
+    position: relative;
+}
+/*If we don't add anything else it's all the same, however we can now remove the element out of the document flow with */
+/*Other elements are not affected*/
+.orange {
+    position: relative;
+    top: 20px;
+}
+
+.orange {
+    position: relative;
+    right: 20px;
+}
+
+.orange {
+    position: relative;
+    left: 20px;
+}
+
+.orange {
+    position: relative;
+    bottom: 20px;
+}
+
+/*We can combine all of the above*/
+/*However this is not the best use case - you should not do that to change the layout - you have flexbox for this*/
+/*We will get back to this property*/
+
+/*Position absolute*/
+
+.orange {
+    position: absolute;
+}
+
+/*Two things happen - the element is now positioned absolutely relative to the nearest parent with position relative.
+In this case it's the browser window. Another subtle thing - we don't see it - browser creates a another dimension
+or stacking context
+
+https://imgflip.com/i/5h21o9
+
+ */
+/*The good news that we can now add position: relative to the parent element*/
+/*final position of the child is according to left, right, top, bottom*/
+
+/*z-index*/
+.orange {
+    position: absolute;
+    /*left;*/
+    z-index: 1;
+}
+
+/*Position fixed*/
+/*Fixed to the view port or browser window*/
+.orange {
+    position: fixed;
+    /*right*/
+}
+
+/*Position sticky*/
+.orange {
+    position: sticky;
+    /*right*/
+    top: 10px;
+}
+/*Also creates another stacking context*/
+
+/*Additional sources*/
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/position*/
+/*https://css-tricks.com/almanac/properties/p/position/*/
+
