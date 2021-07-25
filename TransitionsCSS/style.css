@@ -1,0 +1,32 @@
+/*Normalize*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+
+/*Parent styles*/
+.parent {
+    background-color: lightblue;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Child properties*/
+
+
+.btn {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1;
+    color: white;
+    background-color: coral;
+    width: 200px;
+    height: 70px;
+    border: none;
+    cursor:pointer;
+    border-radius: 4px;
+}
