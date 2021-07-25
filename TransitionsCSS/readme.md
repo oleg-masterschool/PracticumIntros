@@ -1,4 +1,4 @@
-#CSS transitions
+# CSS transitions
 https://caniuse.com/css-transitions
 
 Not everything can be animated:
@@ -41,7 +41,7 @@ border-radius: 4px;
 }
 ```
 
-###Hover animation 
+### Hover animation 
 
 ```css
 
@@ -68,7 +68,7 @@ opacity: 0;
 
 transition: ALL is a bad idea
 
-##Timing functions
+## Timing functions
 ```css
 
 
@@ -83,7 +83,7 @@ transition: transform 250ms linear;
 ```
 
 
-###Ease in
+### Ease in
 https://www.joshwcomeau.com/animation/css-transitions/#ease-in
 
 ```css
@@ -91,7 +91,7 @@ https://www.joshwcomeau.com/animation/css-transitions/#ease-in
 transition: transform 250ms ease-in;
 }
 ```
-###Ease out
+### Ease out
 https://www.joshwcomeau.com/animation/css-transitions/#ease-out
 
 ```css
@@ -101,7 +101,7 @@ https://www.joshwcomeau.com/animation/css-transitions/#ease-out
 
 ```
 
-###Ease in out
+### Ease in out
 https://www.joshwcomeau.com/animation/css-transitions/#ease-in-out
 ```css
 .btn {
@@ -110,7 +110,7 @@ transition: transform 250ms ease-in-out;
 ```
 
 
-###Ease
+### Ease
 https://www.joshwcomeau.com/animation/css-transitions/#ease
 ```css
 .btn {
@@ -119,7 +119,7 @@ transition: transform 250ms ease;
 
 ```
 
-###Cubic bezier
+### Cubic bezier
 Making custom timing functions:
 https://cubic-bezier.com/
 
@@ -133,13 +133,13 @@ creating a stepped, janky effect. transform, meanwhile, can smoothly shift betwe
 thanks to the GPU's anti-aliasing trickery.
 
 
-###Delays
+### Delays
 https://www.joshwcomeau.com/animation/css-transitions/#delays
 Dropdown example
 
 
 
-##Custom Animations
+## Custom Animations
 ```css
 @keyframes bounceIn {
     0% {
@@ -166,10 +166,10 @@ animation: [animation-name] [animation-duration] [animation-timing-function]
 [animation-delay] [animation-iteration-count] [animation-direction]
 [animation-fill-mode] [animation-play-state];
 
-###Box-shadow
+### Box-shadow
 Built-in tool in Chrome's inspect
 
-###Overflow 
+### Overflow 
 Use sparingly. Overflow is extremely difficult to debug. Can lead to very bad layout in children
 
 ### Text overflow
