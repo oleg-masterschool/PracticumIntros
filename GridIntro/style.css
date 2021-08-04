@@ -1,0 +1,9 @@
+.grid > div {
+    padding: 1em;
+    background-color: mistyrose;
+}
+
+.grid > div:nth-child(even) {
+    padding: 1em;
+    background-color: lightblue;
+}
