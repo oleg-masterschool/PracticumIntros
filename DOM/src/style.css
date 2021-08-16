@@ -1,0 +1,136 @@
+/*Normalize*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.page__header {
+    display: flex;
+    background-color: white;
+    font-size: 24px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.page__logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo__image {
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.logo__header {
+    margin-left: 16px;
+}
+
+/* Place */
+
+.place {
+    margin: 48px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    .place {
+        margin: 72px 24px;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 12px;
+        row-gap: 48px;
+    }
+}
+
+/* Header */
+
+.header__title {
+    color: white;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 109%;
+    padding: 0 16px;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+    .header__title {
+        min-width: 50%;
+        font-size: 42px;
+        line-height: 110%;
+        padding: 0;
+        margin-right: 12px;
+        margin-bottom: 0;
+    }
+}
+
+/* Header Link */
+.header__link {
+    padding: 0 16px;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+    .header__link {
+        margin-bottom: 0;
+    }
+}
+
+/* Link */
+.link__title {
+    color: #aaa;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 0.2em;
+    margin-bottom: 12px;
+}
+
+.link__text {
+    font-size: 18px;
+    line-height: 122%;
+    text-decoration: underline;
+    color: white;
+}
+
+/* Content */
+.content__image {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .content__image {
+        margin-right: 12px;
+    }
+}
+
+.content__text {
+    margin-top: 32px;
+    padding: 0 16px;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .content__text {
+        margin: 0;
+    }
+}
+
+.text__paragraph {
+    margin-bottom: 25px;
+}
+
+.text__paragraph:last-of-type {
+    margin-bottom: 0;
+}
