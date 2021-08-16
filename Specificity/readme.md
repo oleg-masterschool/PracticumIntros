@@ -97,3 +97,5 @@ It's enough to override this rule with a single rule with greater specificity:
 Now important! adds its own level of specificity above the mentioned, but it follows the general rules of specificity
 
 Direct sibling doesn't increase specificity: >, +, ~
+
+https://frontendmasters.com/courses/css-in-depth-v2/specificity/ - in depth
