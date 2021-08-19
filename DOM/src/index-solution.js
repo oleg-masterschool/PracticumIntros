@@ -83,12 +83,3 @@ document.querySelector('nav').appendChild(blogLink);
 // We cannot append the same copy multiple times
 const secondPlace = firstPlace.cloneNode(true);
 document.querySelector('.articles').appendChild(secondPlace);
-
-const data = {
-    "contact": {
-        "contact-heading": "Contact"
-    }
-}
-
-const contactHeading = document.querySelector('.contact-heading');
-contactHeading.textContent = data["contact"]["contact-heading"];
