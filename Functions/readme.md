@@ -33,7 +33,7 @@ Functions with side effects
 Whenever a function is defined and executed it behaves like a little program all in itself.
 Meaning it creates its own **execution context**. What is an execution context? Glad, you asked:
 Since the beginning of execution JS engine in the browser creates an environment where it runs: 
-we call it creating **global execution contexft**. These include:
+we call it creating **global execution context**. These include:
 - allocating memory to store variables globally
 - assigning the variables to `undefined`
 - **hoisting** _function_ and _var_ declarations into memory
