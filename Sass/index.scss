@@ -1,0 +1,57 @@
+// Variables
+// ${variable name}
+
+$rifle_green: #3f4b3b;
+$hunter_green: #44633F;
+$russian_green: #5a9367;
+$shiny_shamrock: #5cab7d;
+$turquoise: #4adbc8;
+
+.form__header {
+  color: $hunter_green;
+}
+
+
+// Composing variables
+$green_border: 1px solid $shiny_shamrock;
+
+.form__button {
+  border: $green_border;
+}
+
+// Using variables for calculations
+$form_width: 560px;
+$margin_sm: 20px;
+
+.form__item {
+  width: $form_width - $margin_sm - $margin_sm; // two items side by side
+}
+
+.form__input {
+  width: calc(50% - #{$form_width} / 2);
+}
+
+// Nesting classes
+.student__form {
+  width: 300px;
+
+  .form__button {
+    border: $green_border;
+
+    &:hover {
+      border-color: $turquoise;
+    }
+
+    &.is-disabled {
+      pointer-events: none;
+    }
+  }
+}
+
+
+
+
+
+
+
+
