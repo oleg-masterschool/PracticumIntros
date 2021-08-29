@@ -2,6 +2,6 @@
 
 0. Clone the repo `git clone https://github.com/oleg-masterschool/PracticumIntros.git`
 1. Install NodeJS. [Download page](https://nodejs.org/en/download/)
-2. Enter the folder: `$ cd /PracticumIntros/DOM/`
+2. Enter the folder: `$ cd /PracticumIntros/Validations/`
 3. Install dependencies (Express server) `$ npm install`
 4. Start the server `$ npm run server`

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<h1>Forms again!</h1>
+<section class="validations">
+    <form action="/validate" method="POST" class="form" name="studentInformation" novalidate>
+        <fieldset class="form__field">
+            <label for="studentName">Student Name input</label>
+            <input type="text" name="studentName" id="studentName" class="form__input">
+            <span id="email-input-error" class="form__input-error">Please fill in this field</span>
+        </fieldset>
+
+        <fieldset class="form__field">
+            <label for="experience">Prior coding experience?</label>
+            <input type="checkbox" name="experience" id="experience" value="experience">
+        </fieldset>
+
+        <fieldset class="form__field">
+            <label for="personalMessage">Tell us about yourself</label>
+            <textarea id="personalMessage" placeholder="Your personal message..."></textarea>
+        </fieldset>
+
+        <fieldset class="form__field">
+            <!--        <label for="cars">Dropdown for </label>-->
+            <!--        <select id="cars">-->
+            <!--            <option value="volvo">Volvo</option>-->
+            <!--            <option value="saab">Saab</option>-->
+            <!--            <option value="mercedes">Mercedes</option>-->
+            <!--            <option value="audi">Audi</option>-->
+            <!--        </select>-->
+        </fieldset>
+
+        <footer class="form__footer">
+            <button type="reset">Reset Form</button>
+            <button type="submit">Submit Form</button>
+        </footer>
+
+    </form>
+</section>
+<script src="index.js"></script>
+</body>
+</html>
