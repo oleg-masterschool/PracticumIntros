@@ -14,7 +14,7 @@
   @extend %message-shared;
 }
 
-.success {
+.message-success {
   @extend %message-shared;
   border-color: green;
 }
