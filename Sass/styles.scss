@@ -1,0 +1,16 @@
+// Import partial scss files with
+@use './partials/_mixins.scss';
+
+// Mixins
+
+.form {
+  @include mixins.flex(row, center, center);
+}
+
+.form-vertical {
+  @include mixins.flex();
+}
+
+.form__button {
+  @include mixins.fade(fadeIn, ease, 3s, 1, forwards);
+}

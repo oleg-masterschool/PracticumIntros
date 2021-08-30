@@ -11,7 +11,8 @@
     <form action="/validate" method="POST" class="form" name="studentInformation" novalidate>
         <fieldset class="form__field">
             <label for="studentName">Student Name input</label>
-            <input type="text" name="studentName" id="studentName" class="form__input">
+            <input type="text" name="studentName" id="studentName" class="form__input" required minlength="2"
+                   maxlength="180">
             <span id="email-input-error" class="form__input-error">Please fill in this field</span>
         </fieldset>
 
@@ -22,7 +23,7 @@
 
         <fieldset class="form__field">
             <label for="personalMessage">Tell us about yourself</label>
-            <textarea id="personalMessage" placeholder="Your personal message..."></textarea>
+            <textarea id="personalMessage" placeholder="Your personal message..." name="personalMessage"></textarea>
         </fieldset>
 
         <fieldset class="form__field">
@@ -37,7 +38,7 @@
 
         <footer class="form__footer">
             <button type="reset">Reset Form</button>
-            <button type="submit">Submit Form</button>
+            <button>Submit Form</button>
         </footer>
 
     </form>
