@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Debugging JS bugs</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<section class="validations">
+    <form method="POST" class="form" name="debugging" novalidate>
+        <fieldset class="form__field">
+            <label for="firstNumber">first number</label>
+            <input type="text" name="firstNumber" id="firstNumber" class="form__input" required
+                   placeholder="input 1st number">
+        </fieldset>
+        <fieldset class="form__field">
+            <label for="secondNumber">second number</label>
+            <input type="text" name="secondNumber" id="secondNumber" class="form__input" required
+                   placeholder="input 2nd number">
+        </fieldset>
+
+        <footer class="form__footer">
+            <button type="reset" class="button__reset">Reset Form</button>
+            <button>Add two numbers</button>
+        </footer>
+
+        <p class="form__result"></p>
+    </form>
+
+</section>
+<script src="index.js"></script>
+</body>
+</html>
