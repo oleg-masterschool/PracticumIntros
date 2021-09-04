@@ -144,12 +144,13 @@ console.log(typeof double); // Output: function
 
 Let’s summarise what we’ve learned so far:
 
-While using ES5 **var**, trying to use undeclared variables will lead to the variable being assigned a value of _undefined_
-when hoisting. While using ES6 **let** and **const**, using undeclared variables will lead to a _Reference Error_ because the
-variable remains uninitialised at execution.
+While using ES5 **var**, trying to use undeclared variables will lead to the variable being assigned a value of _
+undefined_
+when hoisting. While using ES6 **let** and **const**, using undeclared variables will lead to a _Reference Error_
+because the variable remains uninitialised at execution.
 
-We should make it a habit to **declare and initialise JavaScript variables before use**. Using **strict mode** in JavaScript es5
-can help expose undeclared variables.
+We should make it a habit to **declare and initialise JavaScript variables before use**. Using **strict mode** in
+JavaScript es5 can help expose undeclared variables.
 
 https://www.digitalocean.com/community/tutorials/understanding-hoisting-in-javascript
 
