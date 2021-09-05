@@ -1,0 +1,48 @@
+
+body {
+    background-color: #27272c;
+}
+
+.unicorns {
+    color: white;
+    background-color: #212125;
+    width: 20%;
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.unicorns:hover:before {
+    transform: scale(1.02);
+}
+
+.unicorns:before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    transition: all 0.27s ease-in-out;
+    background: linear-gradient(
+            30deg,
+            #d367c1 10%,
+            #dedf40 25%,
+            #62cb5c 50%,
+            #00bbcb 75%,
+            #ab79d6 90%
+    );
+}
+
+p {
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.unicorns__content {
+    position: relative;
+}
