@@ -74,7 +74,7 @@ const edward = new Vampire({ name: 'Edward', surname: 'Cullen'});
 
 class Werewolf extends Creature {
   constructor(params) {
-    super.constructor(params);
+    super(params);
     this._isWolfShape = false;
     this._strength = 50;
   }
