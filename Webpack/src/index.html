@@ -2,16 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Webpack</title>
 </head>
-<body>
-<h1>Testing webpack adding</h1>
+<body class="page">
+<h1 class="page__title">Hello from Webpack!</h1>
 <h2 class="page__subtitle">Image and Font Files Processing!</h2>
 <!-- add an image here -->
 <div class="page__image_wrapper">
-    <img id="image-steps" class="page__image">
+    <img id="image-steps" class="page__image" src="./images/steps.png">
 </div>
-<script src="main.js"></script>
+<!-- add a div block -->
+<div class="page__image_wrapper">
+    <div class="page__image page__image_achievements"></div>
+</div>
+<!-- add another image here -->
+<div class="page__image_wrapper">
+    <img class="page__image" src="./images/website-contacts.jpg">
+</div>
 </body>
 </html>
