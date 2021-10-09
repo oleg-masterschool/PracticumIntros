@@ -59,10 +59,6 @@ export class Vehicle {
         this._element
             .classList.toggle(vehicleActiveClass);
 
-        if (this._element.classList.contains(waterVehicleSelector)) {
-            const screamParagraph = this._element
-        }
-
         if (this._element.classList.contains(vehicleActiveClass)) {
             document.addEventListener('keydown', this._handleKeys);
         } else {
