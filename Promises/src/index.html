@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Promises</title>
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="page">
+<h1>My Garage</h1>
+<section class="garage"></section>
+<template class="vehicle-template vehicle-template_type_land">
+    <div class="vehicle land">
+        <img src="" class="vehicle__image" alt="">
+        <div class="vehicle__text">
+            It drives up till <span class="vehicle__speed"></span>
+            <h3 class="vehicle__caption"></h3>
+        </div>
+    </div>
+</template>
+<template class="vehicle-template vehicle-template_type_water">
+    <div class="vehicle water">
+        <img src="" class="vehicle__image" alt="">
+        <div class="vehicle__text">
+            It sails up till <span class="vehicle__speed"></span>
+        </div>
+        <div class="vehicle__hollers"></div>
+    </div>
+</template>
+<template class="holler">
+    <p class="holler__item">I am on a boat!!!</p>
+</template>
+<script type="module" src="./pages/index.js"></script>
+</body>
+</html>
