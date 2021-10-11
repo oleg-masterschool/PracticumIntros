@@ -50,7 +50,7 @@ Other verbs - PATCH, PUT, DELETE
 ### Server Response
 
 Status codes
-
+100 
 200 OK / 201 Created
 300 Redirect
 400 Unauthorized / 403 Forbidden / 404 Not found
