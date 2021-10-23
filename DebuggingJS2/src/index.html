@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Around the U.S.</title>
+  </head>
+  <body class="page">
+    <div class="page__container">
+      <header class="header">
+        <div class="header__vector"></div>
+      </header>
+
+      <main>
+        <section class="profile">
+          <img src="./images/cousteau.jpeg" alt="photo of
+          Jacques Cousteau" class="profile__avatar" />
+          <div class="profile__info">
+            <div class="profile__info-header">
+              <h1 class="profile__title">Jacques Cousteau</h1>
+              <button type="button" class="profile__info-edit">Edit</button>
+            </div>
+            <p class="profile__subtitle">Explorer</p>
+          </div>
+          <button type="button" class="profile__add-button">Add</button>
+        </section>
+
+        <section class="elements"></section>
+      </main>
+
+      <footer class="footer">
+        <p class="footer__copyright">© 2021 Around The U.S.</p>
+      </footer>
+
+      <template id="elements-item">
+        <div class="elements__item">
+          <img src="#" alt="A photo of the card" class="elements__img" />
+          <button class="elements__delete-button">Delete</button>
+          <div class="elements__content">
+            <h2 class="elements__title"></h2>
+            <button type="button" class="elements__like-button"></button>
+          </div>
+        </div>
+      </template>
+
+      <div class="modal modal_type_edit-profile">
+        <div class="modal__container">
+          <button type="button" class="modal__close"></button>
+          <h2 class="modal__title">edit profile</h2>
+          <form action="#" class="modal__form" name="modal-form">
+            <input
+              type="text"
+              class="modal__input modal__input_field_name"
+              id="name-input"
+              placeholder="Full name"
+              name="name"
+              minlength="2"
+              maxlength="40"
+              required
+            />
+            <span id="name-input-error" class="modal__error-text"></span>
+            <input
+              type="text"
+              class="modal__input modal__input_field_profession"
+              id="profession-input"
+              placeholder="Profession"
+              name="profession"
+              minlength="2"
+              maxlength="200"
+              required
+            />
+            <span id="profession-input-error" class="modal__error-text"></span>
+            <button type="submit" class="modal__submit-button">Save</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="modal modal_type_add-card">
+        <div class="modal__container">
+          <button type="button" class="modal__close"></button>
+          <h2 class="modal__title">New place</h2>
+          <form action="#" class="modal__form" name="modal-form">
+            <input
+              type="text"
+              class="modal__input modal__input_field_title"
+              id="card-title-input"
+              placeholder="Title"
+              name="Title"
+              minlength="1"
+              maxlength="30"
+              required
+            />
+            <span id="card-title-input-error" class="modal__error-text"></span>
+            <input
+              type="url"
+              class="modal__input modal__input_field_image-link"
+              id="card-input-link"
+              placeholder="Image link"
+              name="Image link"
+              required
+            />
+            <span id="card-input-link-error" class="modal__error-text"></span>
+            <button type="submit" class="modal__submit-button">Create</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="modal modal_img">
+        <div class="modal__container-img">
+          <button type="button" class="modal__close"></button>
+          <figure class="modal__figure">
+            <img src="#" alt="Selected card photo" class="modal__image" />
+            <figcaption class="modal__caption"></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+<!--    <script type="module" src="./index.js"></script>-->
+  </body>
+</html>
